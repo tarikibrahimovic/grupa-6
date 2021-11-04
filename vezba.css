@@ -1,0 +1,31 @@
+.glavni{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+.goreLevo{
+    position: relative;
+    top:0;
+    left: 0;
+}
+.goreDesno{
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.doleLevo{
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+.doleDesno{
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+.centar{
+    position: relative;
+    top: 50%;
+    right: 50%;
+}
