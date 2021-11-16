@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    background-color: #21242c;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.glavni{
+    display: flex;
+}
+
+.kartica{
+    margin: 300px;
+    background-color: #15191f;
+    width: 20%;
+    height: 40%;
+    border-radius: 20px;
+}
+
+.ikonice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 15px;
+}
+.kartica #zastava{
+    visibility: hidden;
+}
+
+.kartica:hover #zastava{
+    visibility: visible;
+    transition: 0.3s;
+}
+
+#zastava:hover{
+    background-color: #525f74;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.naslov{
+    margin-left: 30px;
+}
+
+#logo{
+    height: 180px;
+    width: 100%;
+    border-radius: 30px;
+    padding: auto;
+    z-index: 5;
+    position: relative;
+}
+
+.slika{
+    position: relative;
+}
+
+#user{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.pop{
+    display: flex;
+    background-color: #0e1014;
+    color: white;
+    width: 97%;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 0px 4px;
+    z-index: 3;
+    position: absolute;
+}
+
+.pop p{
+    display: inline;
+    margin-left: 15px;
+}
+
+.kartica:hover .pop{
+    z-index: 6;
+}
+
+/* .kartica:hover{
+    border: 1px solid white;
+    box-shadow: 0 0 1px;
+    transition: 0.3s;
+} */

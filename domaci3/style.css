@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(226, 226, 226);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prvi{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px rgb(146, 146, 146,2);
+    animation: mymove 9s infinite;
+}
+
+@keyframes mymove {
+    0%{        
+        width: 100px;
+        height: 100px;
+        box-shadow: 5px 5px 3px rgb(146, 146, 146,2);
+    }
+    20%{
+        width: 100px;
+        height: 400px;
+        box-shadow: 5px 5px 3px rgb(146, 146, 146,2);
+    }
+    40%{
+        width: 600px;
+        height: 400px;
+        box-shadow: 5px 5px 3px rgb(146, 146, 146,2);
+    }
+    60%{
+        width: 100px;
+        height: 400px;
+        box-shadow: 5px 5px 3px rgb(146, 146, 146,2);
+    }
+    80%{
+        width: 100px;
+        height: 100px;
+        box-shadow: 5px 5px 3px rgb(146, 146, 146,2);
+        
+    }
+    98%{
+        width: 100px;
+        height: 100px;
+        box-shadow: 4px 4px 2px rgb(145, 145, 145) inset;
+    }
+    99%{ 
+        width: 100px;
+        height: 100px;
+        box-shadow: 5px 5px 3px rgb(146, 146, 146,2);
+    }
+    100%{
+        width: 100px;
+        height: 100px;
+        box-shadow: 5px 5px 3px rgb(146, 146, 146,2);
+    }
+}
