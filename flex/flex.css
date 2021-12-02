@@ -1,0 +1,30 @@
+.glavni{
+    background-color: rgb(61, 155, 61);
+    color: #f9f9f9;
+    height: auto;
+    width: 300px;
+}
+.pop{
+    background-color: gray;
+    display: none;
+    width: 300px;
+}
+
+.pop-item{
+    border: 1px solid white;
+    text-align: center;
+}
+.dugme{
+    text-align: center;
+}
+
+.glavni:hover .pop{
+    display: block;
+    position: absolute;
+    z-index: 5;
+}
+
+.text{
+    position: absolute;
+    z-index: 2;
+}
