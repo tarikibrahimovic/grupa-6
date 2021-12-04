@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+.slika{
+    height: 100vh;
+    width: 55%;
+    background-image: url("https://abs.twimg.com/sticky/illustrations/lohp_en_850x623.png");
+    display: flex;
+}
+
+#ptica{
+    fill: white;
+    margin: auto;
+    width: 300px;
+}
+
+.content img{
+    width: 3rem;
+    height: 3rem;
+    margin: 1.7rem;
+}
+
+.glavni{
+    display: flex;
+}
+
+.main{
+    margin: 0 1.7rem 0 1.7rem;
+}
+
+.main h1{
+    margin-bottom: 1.4rem;
+}
+
+.google{
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    margin: 4px 7px 4px 7px;
+    padding: 4px 7px 4px 7px;
+    margin-top: 10px;
+}
+
+.apple{
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    margin: 4px 7px 4px 7px;
+    margin-top: 10px;
+    padding: 4px 7px 4px 7px;
+}
+
+hr{
+    width: 40%;
+    height: 1px;
+    margin: auto;
+}
+
+.linija{
+    display: flex;
+    text-align: center;
+}
+
+.dugme2 {
+    color: white;
+    background-color: blue;
+    border-radius: 20px;
+    text-align: center;
+    margin: 4px 7px 4px 7px;
+    margin-top: 10px;
+    padding: 4px 7px 4px 7px;
+}
+
+.dugme{
+    width: 70%;
+    height: 70%;
+}
+
+.text{
+    width: 100%;
+    margin: 4px 7px 4px 7px;
+    margin-top: 10px;
+    padding: 4px 7px 4px 7px;
+}
+
+.dugme3{
+    border-radius: 20px;
+    text-align: center;
+    margin: 4px 7px 4px 7px;
+    margin-top: 10px;
+    padding: 4px 7px 4px 7px;
+    color: blue;
+    border: 1px solid gray;
+}
+
+.dugme3,.apple,.google,.dugme2:hover{
+    cursor: pointer;
+}
+
+h3{
+    margin-top: 4rem;
+    margin-bottom: 1.7rem;
+}
+
