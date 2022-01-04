@@ -89,7 +89,7 @@
 //     console.log("Greska");
 //     break;
 // }
-// let ostatak = broj % 7 
+// let ostatak = broj % 7
 // dani+=ostatak
 // dani%=7
 // switch(dani){
@@ -116,17 +116,65 @@
 //     break;
 // }
 
-let pokusaji = Number(window.prompt("Unesite proizvoljan broj brojeva: "))
-let parni=0
-let neparni = 0
-for(let i = 0; i<pokusaji;i++){
-    let pom = Number(window.prompt("Unesite broj: "))
-    if(pom%2===0){
-        parni+=1
-    }
-    else{
-        neparni+=1
-    }
-}
+// let pokusaji = Number(window.prompt("Unesite proizvoljan broj brojeva: "))
+// let parni=0
+// let neparni = 0
+// for(let i = 0; i<pokusaji;i++){
+//     let pom = Number(window.prompt("Unesite broj: "))
+//     if(pom%2===0){
+//         parni+=1
+//     }
+//     else{
+//         neparni+=1
+//     }
+// }
 
-console.log(`Ima ${neparni} neparnih brojeva i ima ${parni} parnih brojeva`);
+// console.log(`Ima ${neparni} neparnih brojeva i ima ${parni} parnih brojeva`);
+
+// let suma = 0
+
+// for(let i = 0;i<1000;i++){
+//     if(i%3===0 && i%5===0){
+//         suma+=i
+//     }
+// }
+// console.log(suma);
+
+// for(let i = 0;i<50;i++){
+//     if(i%3===0){
+//         console.log("fizz");
+//     if(i%5===0)
+//     console.log("buzz");
+//     }
+// else if(i%5===0){
+//     console.log("buzz");
+// }
+// else
+// console.log(i);
+// }
+
+// let broj = Number(window.prompt("Unesite broj: "));
+
+// let suma = 0;
+// let faktorijel = (n) => {
+//   let fakt = 1;
+//   for (let i = 1; i <= n; i++) {
+//     fakt *= i;
+//   }
+//   return fakt;
+// };
+// for (let i = 1; i <= broj; i++) {
+//   suma += faktorijel(i);
+// }
+// console.log(suma);
+
+let broj = Number(window.prompt("Unesite broj:"));
+let pom1 = 1
+let pom2 = 1
+let pom3 = 0
+for (let i = 0; i < broj; i++) {
+    pom3=pom2+pom1
+    console.log(pom3);
+    pom1=pom2
+    pom2=pom3
+}
