@@ -168,13 +168,54 @@
 // }
 // console.log(suma);
 
-let broj = Number(window.prompt("Unesite broj:"));
-let pom1 = 1
-let pom2 = 1
-let pom3 = 0
-for (let i = 0; i < broj; i++) {
-    pom3=pom2+pom1
-    console.log(pom3);
-    pom1=pom2
-    pom2=pom3
+// let broj = Number(window.prompt("Unesite broj:"));
+// let pom1 = 1
+// let pom2 = 1
+// let pom3 = 0
+// for (let i = 0; i < broj; i++) {
+//     pom3=pom2+pom1
+//     console.log(pom3);
+//     pom1=pom2
+//     pom2=pom3
+// }
+// let zvezda = 0
+// for(let i = 0; i < 5; i++){
+//     zvezda+=' *'
+//     console.log(zvezda);
+// }
+
+// for(let i = 1; i <= 10; i++){
+//     var red = "";
+//     for(let j = 1; j <= 10; j++){
+//         red+=`${j * i}\t`;
+//     }
+//     console.log(red,"\n");
+// }
+// let ispod = 0;
+// let ispodTemp = 0;
+// let iznad = 0;
+// let iznadTemp = 0;
+// for (let i = 0; i < 10; i++) {
+//   let temp = Number(prompt("Unesite temperaturu: "));
+//   if (temp < 0) {
+//     ispod++;
+//     ispodTemp += temp;
+//   } else {
+//     iznad++;
+//     iznadTemp += temp;
+//   }
+// }
+// console.log(`Prosecna temperatura ispod nule je : ${ispodTemp / ispod}`);
+// console.log(`Prosecna temperatura iznad nule je : ${iznadTemp / iznad}`);
+
+let rec = "kapake"
+let pom = ""
+console.log(pom);
+for(let i = rec.length-1; i>=0;i--){
+    pom+=rec[i];
 }
+if(rec === pom)
+console.log("Rec je palindrom");
+else
+console.log("Rec nije palindrom");
+
