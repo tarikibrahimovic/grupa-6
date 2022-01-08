@@ -208,14 +208,33 @@
 // console.log(`Prosecna temperatura ispod nule je : ${ispodTemp / ispod}`);
 // console.log(`Prosecna temperatura iznad nule je : ${iznadTemp / iznad}`);
 
-let rec = "kapake"
-let pom = ""
-console.log(pom);
-for(let i = rec.length-1; i>=0;i--){
-    pom+=rec[i];
+// let rec = "kapake"
+// let pom = ""
+// console.log(pom);
+// for(let i = rec.length-1; i>=0;i--){
+//     pom+=rec[i];
+// }
+// if(rec === pom)
+// console.log("Rec je palindrom");
+// else
+// console.log("Rec nije palindrom");
+// let lozinka = ''
+// let pomocna = prompt("Unesite lozinku: ")
+// while(lozinka !== pomocna){
+//     pomocna = prompt('Pogresna lozinka, pokusajte ponovo')
+// }
+// alert("Bravo")
+
+let broj = 0
+while(1){
+    broj = Number(prompt("Unesite broj: "))
+    if(broj === 0)
+    break
+    if(broj <= 20 && broj >=10){
+        alert("Svaka cast, pogodio si.")
+    }
+    else{
+        alert("Promasio si.")
+    }
 }
-if(rec === pom)
-console.log("Rec je palindrom");
-else
-console.log("Rec nije palindrom");
 
