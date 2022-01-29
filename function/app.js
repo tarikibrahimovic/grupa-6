@@ -116,25 +116,62 @@
 // // console.log(element(niz));
 // element(niz)
 
-let niz = [3, 0, 24, 54, 0, 123, 0, 32, 63];
-function nesto(niz) {
-  for (let i = 0; i < niz.length; i++) {
-    if (niz[i] === 0) {
-      niz.splice(i, 1);
-      niz.push(0);
-    }
+// let niz = [3, 0, 24, 54, 0, 123, 0, 32, 63];
+// function nesto(niz) {
+//   for (let i = 0; i < niz.length; i++) {
+//     if (niz[i] === 0) {
+//       niz.splice(i, 1);
+//       niz.push(0);
+//     }
+//   }
+//   return niz;
+// }
+
+// console.log(nesto(niz));
+
+// function avg(){
+//     let suma = 0
+//     for (let i = 0; i < niz.length; i++) {
+//         suma+=niz[i];        
+//     }
+//     return suma/niz.length;
+// }
+
+// console.log(avg(niz));
+
+
+// data = [2,5,34,65,43,52,98,23,66];
+data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+
+// data = data.map((el) => {
+//   if(el % 2 == 1)
+//   return 0;
+//   else{
+//     return el;
+//   }
+// })
+
+// data = data.every((el) => {
+//   return el > 11;
+// })
+
+// data = data.some((el) => {
+//   return el>90;
+// })
+
+niz = [];
+
+sum = 0;
+count = 0
+for (let i = 0; i < data.length; i++) {
+  if(data[i]<0){
+    sum+=data[i];
+  }  
+  else{
+    count++;
   }
-  return niz;
 }
+niz.push(count);
+niz.push(sum);
 
-console.log(nesto(niz));
-
-function avg(){
-    let suma = 0
-    for (let i = 0; i < niz.length; i++) {
-        suma+=niz[i];        
-    }
-    return suma/niz.length;
-}
-
-console.log(avg(niz));
+console.log(niz);
