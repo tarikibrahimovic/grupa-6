@@ -132,13 +132,12 @@
 // function avg(){
 //     let suma = 0
 //     for (let i = 0; i < niz.length; i++) {
-//         suma+=niz[i];        
+//         suma+=niz[i];
 //     }
 //     return suma/niz.length;
 // }
 
 // console.log(avg(niz));
-
 
 // data = [2,5,34,65,43,52,98,23,66];
 data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
@@ -159,19 +158,42 @@ data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
 //   return el>90;
 // })
 
-niz = [];
+// niz = [];
 
-sum = 0;
-count = 0
-for (let i = 0; i < data.length; i++) {
-  if(data[i]<0){
-    sum+=data[i];
-  }  
-  else{
-    count++;
+// sum = 0;
+// count = 0
+// for (let i = 0; i < data.length; i++) {
+//   if(data[i]<0){
+//     sum+=data[i];
+//   }
+//   else{
+//     count++;
+//   }
+// }
+// niz.push(count);
+// niz.push(sum);
+
+// console.log(niz);
+
+// function nesto (n){
+//   pomArr = [];
+//   for (let i = n; i >0 ; i--) {
+//     pomArr.push(i);
+//   }
+//   return pomArr;
+// }
+
+// console.log(nesto(7));
+
+// let n = [10]*2
+
+// console.log(n);
+
+function pillars(brStub, dist, debljina) {
+  if (brStub === 1) {
+    return 0;
   }
+  return dist * (brStub - 1) * 100 + debljina * (brStub - 2);
 }
-niz.push(count);
-niz.push(sum);
-
-console.log(niz);
+console.log(pillars(1, 15, 30));
+  
