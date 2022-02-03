@@ -189,11 +189,92 @@ data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
 
 // console.log(n);
 
-function pillars(brStub, dist, debljina) {
-  if (brStub === 1) {
-    return 0;
+// function pillars(brStub, dist, debljina) {
+//   if (brStub === 1) {
+//     return 0;
+//   }
+//   return dist * (brStub - 1) * 100 + debljina * (brStub - 2);
+// }
+// console.log(pillars(1, 15, 30));
+
+// function iceBrickVolume(radius, bottleLength, rimLength) {
+//   let visina = bottleLength - rimLength;
+//   let stranica = radius * Math.sqrt(2);
+//   return Math.round(stranica * stranica * visina);
+// }
+
+// console.log(iceBrickVolume(5, 30, 7));
+
+// let niz1 = [1, 1, 1, 5, 1, 1];
+// function stray(niz) {
+//   // let brojac = 0;
+//   // // debugger
+//   // niz.sort((a,b) => a - b);
+//   // for (let i = 0; i < niz.length; i++) {
+//   //   brojac = 0;
+//   //   for (let j = 0; j < niz.length; j++) {
+//   //     if (niz[i] === niz[j]) {
+//   //       brojac++;
+//   //     }
+//   //   }
+//   //   if(brojac <= 1){
+//   //     return niz[i];
+//   //   }
+//   // }
+//   num = 0;
+//   if (niz[0] !== niz[1] && niz[0] !== niz[2]) {
+//     num = niz[0];
+//   }
+//   if (
+//     niz[niz.length - 1] !== niz[niz.length - 2] &&
+//     niz[niz.length - 1] !== niz[niz.length - 3]
+//   ) {
+//     num = niz[niz.length - 1];
+//   }
+//   for (let i = 1; i < niz.length - 1; i++) {
+//     if (niz[i] != niz[i - 1] && niz[i] !== niz[i + 1]) {
+//       num = niz[i];
+//       break;
+//     }
+//   }
+//   return num;
+// }
+// console.log(stray(niz1));
+
+// niz = [12, 14, 63, 72, 55, 24];
+// function inverseSlice(niz, a, b) {
+//   let pomNiz = [];
+//   // for (let i = 0; i < niz.length; i++) {
+//   //   if(i<a ||  i>=b){
+//   //     pomNiz.push(niz[i]);
+//   //   }
+//   // }
+//   // pomNiz = niz.slice(0, a);
+//   // pomNiz = pomNiz.concat(niz.slice(b));
+
+//   // return pomNiz;
+
+//   return pomNiz.slice(0,a).concat(pomNiz.slice(b));
+// }
+
+// console.log(inverseSlice(niz, 2, 4));
+
+let recenica =
+  "alpha beta beta gama gama gama delta alpha beta beta gama gama delta";
+
+// console.log(recenica.split(" "));
+
+function nesto(recenica) {
+  let recenicaPom = "";
+  for (let i = 0; i < recenica.split(" ").length; i++) {
+    pom1 = recenica.split(" ")[i];
+    pom2 = recenica.split(" ")[i + 1];
+    if (pom1 !== pom2) {
+      recenicaPom += pom1 + " ";
+    }
   }
-  return dist * (brStub - 1) * 100 + debljina * (brStub - 2);
+  return recenicaPom;
 }
-console.log(pillars(1, 15, 30));
-  
+
+console.log(nesto(recenica));
+// console.log(recenica.split(" ").length);
