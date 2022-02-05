@@ -259,22 +259,71 @@ data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
 
 // console.log(inverseSlice(niz, 2, 4));
 
-let recenica =
-  "alpha beta beta gama gama gama delta alpha beta beta gama gama delta";
+// let recenica =
+// "alpha beta beta gama gama gama delta alpha beta beta gama gama delta";
 
 // console.log(recenica.split(" "));
 
-function nesto(recenica) {
-  let recenicaPom = "";
-  for (let i = 0; i < recenica.split(" ").length; i++) {
-    pom1 = recenica.split(" ")[i];
-    pom2 = recenica.split(" ")[i + 1];
-    if (pom1 !== pom2) {
-      recenicaPom += pom1 + " ";
-    }
-  }
-  return recenicaPom;
-}
+// function nesto(recenica) {
+//   let recenicaPom = "";
+//   for (let i = 0; i < recenica.split(" ").length; i++) {
+//     pom1 = recenica.split(" ")[i];
+//     pom2 = recenica.split(" ")[i + 1];
+//     if (pom1 !== pom2) {
+//       recenicaPom += pom1 + " ";
+//     }
+//   }
+//   return recenicaPom;
+// }
 
-console.log(nesto(recenica));
+// console.log(nesto(recenica));
 // console.log(recenica.split(" ").length);
+
+// let niz = [2, 3, 12, 45, 76, 98, 99];
+
+// function largestPairSum(arr) {
+//   arr.sort((a, b) => a - b);
+//   return arr[arr.length - 1] + arr[arr.length - 2];
+// }
+// console.log(largestPairSum(niz));
+
+// let niz = [5, 2, 1, 7, 4, 9, 23, 645, 867, 32];
+
+// for (let i = 0; i < niz.length; i++) {
+//   for (let j = 0; j < niz.length; j++) {
+//     if (niz[i] < niz[j]) {
+//       let pom = niz[i];
+//       niz[i] = niz[j];
+//       niz[j] = pom;
+//     }
+//   }
+// }
+
+// console.log(niz);
+
+// function nbYear(po,precent,aug,p){
+//   let n = 0;
+//   while(po<p){
+//     po+=(po*precent)/100+aug;
+//     n++;
+//   }
+//   return n;
+// }
+// console.log(nbYear(1500, 5, 100, 5000));
+
+// let podaci = [[75,12],[23,9],[36,5],[83,7],[39,24]];
+
+// function openOrSenior(matrica) {
+//   let rez = [];
+//   for (let i = 0; i < matrica.length; i++) {
+//     if (matrica[i][0] < 55 || matrica[i][1] < 7) {
+//       rez.push("Open");
+//     } else if(matrica[i][0] >= 55 && matrica[i][1] > 7) {
+//       rez.push("Senior");
+//     }
+//   }
+//   return rez;
+// }
+
+// console.log(openOrSenior(podaci));
+
