@@ -327,3 +327,109 @@ data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
 
 // console.log(openOrSenior(podaci));
 
+// function addBinary(a,b){
+//   // let pom = a+b;
+//   // let pom2 = ""
+//   // while(pom !== 0){
+//   //   if(pom % 2 === 1){
+//   //     pom2 ='1' + pom2;
+//   //   }
+//   //   else{
+//   //     pom2 ='0' + pom2;
+//   //   }
+//   //   pom = Math.floor(pom/2);
+//   // }
+//   // return pom2;
+//   return (a+b).toString(2)
+// }
+
+// console.log(addBinary(15,10));
+
+// function disemvowel(str) {
+//   str = str.replace(/[aeiou]/gi, "");
+//   return str;
+// }
+
+// function isValidWalk(walk) {
+//   n = 0;
+//   s = 0;
+//   w = 0;
+//   e = 0;
+//   if (walk.length !== 10) {
+//     return false;
+//   }
+//   for (let i = 0; i < walk.length; i++) {
+//     if (walk[i] === "n") {
+//       n++;
+//     } else if (walk[i] === "s") {
+//       s++;
+//     } else if (walk[i] === "w") {
+//       w++;
+//     } else {
+//       e++;
+//     }
+//   }
+//   if (n - s === 0 && e - w === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(isValidWalk(['n','n','n','s','n','s','n','s','n','s']));
+
+// function XO(str) {
+//   x = 0;
+//   o = 0;
+//   str = str.toLowerCase();
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === "x") {
+//       x++;
+//     } else if (str[i] === "o") {
+//       o++;
+//     }
+//   }
+//   if (x - o === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(XO("xxOo"));
+
+function thirt(n) {
+  let sum = nesto(n);
+  let sumSum = 0;
+  sumSum = nesto(sum);
+  let sumSum2 = nesto(sumSum);
+  if (sumSum === sumSum2) {
+    return sumSum;
+  }
+  while (sumSum !== sumSum2) {
+    sumSum = nesto(sumSum2);
+    sumSum2 = nesto(sumSum);
+  }
+  return sumSum;
+}
+
+function nesto(broj) {
+  let niz = [1, 10, 9, 12, 3, 4];
+  let i = 0;
+  let sum = 0;
+  while (broj !== 0) {
+    i %= 6;
+    pom = broj % 10;
+    pom2 = niz[i] * pom;
+    broj = Math.floor(broj / 10);
+    sum += pom2;
+    i++;
+  }
+  return sum;
+}
+// function thirt(n) {
+//   const nums = [1,10,9,12,3,4]
+//   var sum = (''+n).split('').reverse().reduce((sum,v,i) => sum + v * nums[i%nums.length], 0)
+//   return sum === n ? n : thirt(sum)
+// }
+n = 1234567;
+console.log(thirt(85299258));
