@@ -103,29 +103,87 @@
 // }
 // console.log(o2);
 
-let osoba = {
-  ime : "Tarik",
-  budala : true
-}
-let osoba2 = {
-  ime: "Amir",
-  budala : true
-}
+// let osoba = {
+//   ime : "Tarik",
+//   budala : true
+// }
+// let osoba2 = {
+//   ime: "Amir",
+//   budala : true
+// }
 
-let func = (o1) => {
-  let a = Object.keys(o1)
+// let func = (o1) => {
+//   let a = Object.keys(o1)
 
-  if (a.includes('budala')) {
-    console.log('postji');
-  } else {
-    console.log('ensdada');
+//   if (a.includes('budala')) {
+//     console.log('postji');
+//   } else {
+//     console.log('ensdada');
+//   }
+// }
+// for (let i = 0; i < a; i++) {
+//   if(Object.keys(o1[i]) === pom){
+//     console.log(`Objekat ima ${pom}`);
+//   }
+//   else{
+//     console.log(`Objekat nema ${pom}`);
+//   }
+// }
+
+class Book {
+  constructor(title, genre, author) {
+    this.title = title;
+    this.genre = genre;
+    this.author = author;
+    this.genre = false;
+    this.read_date = null;
   }
 }
-  // for (let i = 0; i < a; i++) {
-  //   if(Object.keys(o1[i]) === pom){
-  //     console.log(`Objekat ima ${pom}`);
-  //   }
-  //   else{
-  //     console.log(`Objekat nema ${pom}`);
-  //   }
-  // }
+
+class Booklist {
+  constructor() {
+    this.book_read = 0;
+    this.book_not_read = 0;
+    this.nextBook = null;
+    this.currBook = null;
+    this.lastBook = null;
+    this.bookShefl = [];
+  }
+
+  add(book) {
+    if (book instanceof Book) {
+      this.bookShefl.push(book);
+    } else {
+      console.log("invalid");
+    }
+  }
+  finishCurrentBook() {
+    for (let i = 0; i < this.bookShelf.length; i++) {
+      const book = this.bookShefl[i];
+      if (book.title === this.currBook.title) {
+        this.bookShefl[i].read = true;
+        this.bookShefl[i].read_date = new Date().now();
+        this.lastBook = this.currBook;
+        this.currBook = this.nextBook;
+        if (this.bookShefl[i + 1]) {
+          this.nextBook = this.bookShefl[i + 1];
+        }
+        break;
+      }
+    }
+  }
+}
+
+b1 = new Book("hp1", "magic", "jkr");
+b2 = new Book("hp1", "magic", "jkr");
+b3 = new Book("hp1", "magic", "jkr");
+b4 = new Book("hp1", "magic", "jkr");
+b5 = new Book("hp1", "magic", "jkr");
+
+booklist = new Booklist();
+
+booklist.add(b1);
+booklist.add(b2);
+booklist.add(b3);
+booklist.add(b4);
+booklist.add(b5);
