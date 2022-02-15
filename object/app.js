@@ -130,60 +130,78 @@
 //   }
 // }
 
-class Book {
-  constructor(title, genre, author) {
-    this.title = title;
-    this.genre = genre;
-    this.author = author;
-    this.genre = false;
-    this.read_date = null;
-  }
+// class Book {
+//   constructor(title, genre, author) {
+//     this.title = title;
+//     this.genre = genre;
+//     this.author = author;
+//     this.genre = false;
+//     this.read_date = null;
+//   }
+// }
+
+// class Booklist {
+//   constructor() {
+//     this.book_read = 0;
+//     this.book_not_read = 0;
+//     this.nextBook = null;
+//     this.currBook = null;
+//     this.lastBook = null;
+//     this.bookShefl = [];
+//   }
+
+//   add(book) {
+//     if (book instanceof Book) {
+//       this.bookShefl.push(book);
+//     } else {
+//       console.log("invalid");
+//     }
+//   }
+//   finishCurrentBook() {
+//     for (let i = 0; i < this.bookShelf.length; i++) {
+//       const book = this.bookShefl[i];
+//       if (book.title === this.currBook.title) {
+//         this.bookShefl[i].read = true;
+//         this.bookShefl[i].read_date = new Date().now();
+//         this.lastBook = this.currBook;
+//         this.currBook = this.nextBook;
+//         if (this.bookShefl[i + 1]) {
+//           this.nextBook = this.bookShefl[i + 1];
+//         }
+//         break;
+//       }
+//     }
+//   }
+// }
+
+// b1 = new Book("hp1", "magic", "jkr");
+// b2 = new Book("hp1", "magic", "jkr");
+// b3 = new Book("hp1", "magic", "jkr");
+// b4 = new Book("hp1", "magic", "jkr");
+// b5 = new Book("hp1", "magic", "jkr");
+
+// booklist = new Booklist();
+
+// booklist.add(b1);
+// booklist.add(b2);
+// booklist.add(b3);
+// booklist.add(b4);
+// booklist.add(b5);
+
+
+
+//bind()
+//call() i apply();
+
+// let neki = {
+//   name: "Tarik",
+//   surname: "Ibrahimovic",
+// };
+
+// console.log("Ibrahimovic" in neki);
+
+nesto = function (a) {
+  let a = 0
+  console.log(a);
 }
 
-class Booklist {
-  constructor() {
-    this.book_read = 0;
-    this.book_not_read = 0;
-    this.nextBook = null;
-    this.currBook = null;
-    this.lastBook = null;
-    this.bookShefl = [];
-  }
-
-  add(book) {
-    if (book instanceof Book) {
-      this.bookShefl.push(book);
-    } else {
-      console.log("invalid");
-    }
-  }
-  finishCurrentBook() {
-    for (let i = 0; i < this.bookShelf.length; i++) {
-      const book = this.bookShefl[i];
-      if (book.title === this.currBook.title) {
-        this.bookShefl[i].read = true;
-        this.bookShefl[i].read_date = new Date().now();
-        this.lastBook = this.currBook;
-        this.currBook = this.nextBook;
-        if (this.bookShefl[i + 1]) {
-          this.nextBook = this.bookShefl[i + 1];
-        }
-        break;
-      }
-    }
-  }
-}
-
-b1 = new Book("hp1", "magic", "jkr");
-b2 = new Book("hp1", "magic", "jkr");
-b3 = new Book("hp1", "magic", "jkr");
-b4 = new Book("hp1", "magic", "jkr");
-b5 = new Book("hp1", "magic", "jkr");
-
-booklist = new Booklist();
-
-booklist.add(b1);
-booklist.add(b2);
-booklist.add(b3);
-booklist.add(b4);
-booklist.add(b5);
