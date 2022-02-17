@@ -188,8 +188,6 @@
 // booklist.add(b4);
 // booklist.add(b5);
 
-
-
 //bind()
 //call() i apply();
 
@@ -200,8 +198,76 @@
 
 // console.log("Ibrahimovic" in neki);
 
-nesto = function (a) {
-  let a = 0
-  console.log(a);
+// nesto = function (a) {
+//   let a = 0
+//   console.log(a);
+// }
+
+// let obj = {
+//   a: 1,
+//   b: 2,
+// };
+
+// console.log(Object.entries(a));
+
+// function nesto(a,b){
+//   delete a[b]
+//   return a;
+// }
+
+// console.log(nesto(obj,"a"));
+
+// console.log(obj[0]);
+// function without(a,b){
+//   a.filter()
+// }
+
+let library = [
+  {
+    author: "Bill Gates",
+    title: "The Road Ahead",
+    readingStatus: true,
+    age: 29,
+  },
+  {
+    author: "Stive Jobs",
+    title: "Wakter Isaacson",
+    readingStatus: true,
+    age: 14,
+  },
+  {
+    author: "Suzanne Collins",
+    title: "Mockingjay : The final Book of The Hunger Games",
+    readingStatus: false,
+    age: 25,
+  },
+  {
+    author: "Bill Gates",
+    title: "The Road Ahead",
+    readingStatus: true,
+    age: 19,
+  },
+  {
+    author: "Stive Jobs",
+    title: "Wakter Isaacson",
+    readingStatus: true,
+    age: 12,
+  },
+];
+
+console.log(
+  library.filter((e) => {
+    return e.age > 18;
+  })
+);
+
+function nesto(obj) {
+  let niz = [];
+  for (let i of obj) {
+    if (obj[i].age >= 18) {
+      niz.push(obj[i]);
+    }
+  }
+  return niz;
 }
 
