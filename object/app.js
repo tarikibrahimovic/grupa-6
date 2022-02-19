@@ -222,52 +222,38 @@
 //   a.filter()
 // }
 
-let library = [
-  {
-    author: "Bill Gates",
-    title: "The Road Ahead",
-    readingStatus: true,
-    age: 29,
-  },
-  {
-    author: "Stive Jobs",
-    title: "Wakter Isaacson",
-    readingStatus: true,
-    age: 14,
-  },
-  {
-    author: "Suzanne Collins",
-    title: "Mockingjay : The final Book of The Hunger Games",
-    readingStatus: false,
-    age: 25,
-  },
-  {
-    author: "Bill Gates",
-    title: "The Road Ahead",
-    readingStatus: true,
-    age: 19,
-  },
-  {
-    author: "Stive Jobs",
-    title: "Wakter Isaacson",
-    readingStatus: true,
-    age: 12,
-  },
-];
+// 
 
-console.log(
-  library.filter((e) => {
-    return e.age > 18;
-  })
-);
 
-function nesto(obj) {
-  let niz = [];
-  for (let i of obj) {
-    if (obj[i].age >= 18) {
-      niz.push(obj[i]);
-    }
-  }
-  return niz;
+function wash(){
+  setTimeout(() => {
+    console.log("wash");
+  },3000);
 }
 
+function dry(){
+  setTimeout(() => {
+    console.log("dry");
+  },2000);
+}
+
+function fold(){
+  setTimeout(() => {
+    console.log("fold");
+  },1000);
+}
+
+function doLaundry(arr){
+  // for (let i = 0; i < arr.length; i++) {
+  //   arr[i]();
+  // }
+  wash(() => {
+    dry(()=>{
+      fold(()=>{
+        console.log("Done");
+      })
+    })
+  })
+}
+
+doLaundry([wash,dry,fold]);
