@@ -111,16 +111,53 @@
 //       });
 // }
 
-function job() {
-  return "Hello world";
-}
+// function job() {
+//   return "Hello world";
+// }
 
-let obecanje = new Promise(function (resolve, reject) {
-  setTimeout(() => {
-    resolve(job())},
-   2000);
-});
+// let obecanje = new Promise(function (resolve, reject) {
+//   setTimeout(() => {
+//     resolve(job())},
+//    2000);
+// });
 
-obecanje.then((value) => {
-  console.log(value);
-});
+// obecanje.then((value) => {
+//   console.log(value);
+// });
+
+// niz = [1,2,23,34,4];
+// console.log(niz.slice(1));
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// fetch("https://catfact.ninja/facts").then((res) => {
+//     return res.json();
+// }).then((odg) => {
+//     const nesto = odg.data
+//     console.log(nesto);
+// })
+
+// let func = async () => {
+//   try {
+//     const pom = await fetch("https://catfact.ninja/facts");
+//     let a = await pom.json();
+//     console.log(a.data);
+//   } catch {
+//     console.log("Greska");
+//   }
+// };
+// func();
+
+let func = async () => {
+  try {
+    const res = await fetch("https://jsonplaceholder.typicode.com/users");
+    let res2 = await res.json();
+    let niz = res2.map((user) => {
+      return user.name;
+    });
+    console.log(niz);
+  } catch {
+    console.log("greska");
+  }
+};
+func();
