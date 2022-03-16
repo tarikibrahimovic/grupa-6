@@ -1,0 +1,29 @@
+.kartica{
+    height: 400px;
+    width: 250px;
+    background-color: tan;
+}
+
+.glavni{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav{
+    background-color: gainsboro;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 100px;
+}
+
+.button{
+    width: auto;
+    height: 30px;
+}
+
+.active{
+    background-color: burlywood;
+}
