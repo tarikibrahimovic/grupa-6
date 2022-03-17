@@ -42,7 +42,23 @@ fetch("https://catfact.ninja/facts")
     for (let i = 0; i < data.data.length; i++) {
         mojDiv.appendChild(a(data.data[i]));
     }
+    for (let i = 0; i < data.links.length; i++) {
+      nav.appendChild()      
+    }
   });
+
+let nav = document.querySelector('.nav');
+
+
+function pageNav(vals){
+  let navigacija = document.createElement('a');
+  navigacija.href = vals.url;
+  navigacija.innerHTML = vals.label;
+  if(vals.active) {
+    navigacija.style.background = 'white';
+  }
+  return navigacija
+}
 
 // var e = 10;
 // function sum(a) {
@@ -56,3 +72,12 @@ fetch("https://catfact.ninja/facts")
 // }
 
 // console.log(sum(1)(2)(3)(4));
+
+// ime = "Tarik";
+
+// function hello() {
+//   console.log("Hello ", ime);
+// }
+
+// hello()
+
