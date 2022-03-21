@@ -1,0 +1,491 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+header {
+  background-color: rgb(34, 130, 255);
+  display: flex;
+  align-items: center;
+  height: 7vh;
+  font-family: "Open Sans", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#hidden {
+  visibility: hidden;
+}
+
+.levo {
+  display: flex;
+  align-items: center;
+  color: white;
+  border-right: 2px solid white;
+  padding-right: 10px;
+}
+
+.rest {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+}
+
+#register a {
+  text-decoration: none;
+  color: rgb(34, 130, 255);
+}
+
+#logo {
+  width: 20px;
+  margin: 0 10px;
+}
+
+#lista {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  margin: 0 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#item,
+#itema {
+  margin: 0 7px;
+}
+
+#itema {
+  border-bottom: 2px solid white;
+}
+
+#transa{
+  text-decoration: none;
+  color: white;
+  padding: 2px;
+}
+#trans{
+  border: 1px solid white;
+  background-color: rgb(34, 130, 255);
+  padding: 3px;
+  border-radius: 5px;
+  color: white;
+  height: 30px;
+  width: auto;
+}
+
+#item a,
+#itema a {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+#item a:hover {
+  border-bottom: 2px solid white;
+}
+
+#register {
+  border: 1px solid white;
+  background-color: white;
+  color: rgb(34, 130, 255);
+  padding: 3px;
+  border-radius: 5px;
+  margin-left: 5px;
+  height: 30px;
+  width: 60px;
+}
+
+#login {
+  border: 1px solid white;
+  background-color: rgb(34, 130, 255);
+  padding: 3px;
+  border-radius: 5px;
+  color: white;
+  height: 30px;
+  width: 60px;
+}
+
+#login:hover,#trans:hover {
+  box-shadow: white 0 0 2px;
+}
+
+.desno input {
+  border: none;
+  color: #f3f3f3;
+  background-color: inherit;
+  border-bottom: 1px solid #f3f3f3;
+  padding: 3px;
+}
+
+::placeholder {
+  color: #f3f3f3;
+}
+
+.desno input:focus {
+  outline: none;
+}
+
+#register:hover {
+  box-shadow: white 0 0 2px;
+}
+
+#bars {
+  display: none;
+  font-size: 25px;
+  padding: 3px;
+  border-radius: 15%;
+  margin-right: 20px;
+}
+
+#bars:hover {
+  background-color: rgb(0, 96, 223);
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 75%;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.inputi{
+  display: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#people {
+  width: 100%;
+  height: auto;
+}
+.prvi {
+  display: flex;
+  background-color: rgb(241, 241, 247);
+  color: black;
+}
+.desni {
+  display: flex;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: lavender;
+}
+.desni img {
+  width: 70%;
+  clip-path: circle(30.8% at 50% 50%);
+}
+.levi {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  background-color: lavenderblush;
+}
+#text {
+  font-size: 2.3rem;
+  margin-bottom: 10%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.drugi {
+  display: flex;
+}
+.levi2 {
+  width: 50%;
+  height: auto;
+  background-color: #c3c3e7;
+  display: flex;
+}
+#tarik {
+  width: 90%;
+  clip-path: circle(30% at 50% 50%);
+  margin: auto;
+}
+.desni2 {
+  width: 50%;
+  height: auto;
+  display: grid;
+  place-content: center;
+  background-color: #b8b8e6;
+}
+#text {
+  font-size: 2.3rem;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  place-content: center;
+  margin-bottom: 10%;
+}
+#par {
+  font-family: "Open Sans", sans-serif;
+  padding: 0 2%;
+}
+.treci {
+  width: 100%;
+  display: flex;
+}
+.levi3 {
+  width: 50%;
+  height: auto;
+  background-color: #9b9bec;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+.levi3 h1 {
+  font-size: 2.3rem;
+  margin-bottom: 10%;
+  font-family: "Roboto", sans-serif;
+}
+.levi3 p {
+  font-family: "Open Sans", sans-serif;
+  padding: 0 2%;
+}
+.desni3 {
+  display: flex;
+  width: 50%;
+  background-color: #8383ec;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+.desni3 img {
+  width: 45%;
+  clip-path: circle(35% at 50% 50%);
+}
+.cetvrti {
+  width: 100%;
+  display: flex;
+}
+.levi4 {
+  display: flex;
+  width: 50%;
+  background-color: #6767e9;
+  height: auto;
+}
+.levi4 img {
+  width: 50%;
+  clip-path: circle(47% at 50% 50%); 
+  margin: auto;
+}
+.desni4 {
+  width: 50%;
+  height: auto;
+  background-color: #5f5fec;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+.desni4 h1 {
+  font-size: 2.3rem;
+  margin-bottom: 10%;
+  font-family: "Roboto", sans-serif;
+}
+.desni4 p {
+  font-family: "Open Sans", sans-serif;
+  padding: 0 2%;
+}
+.peti {
+  width: 100%;
+  display: flex;
+}
+.levi5 {
+  width: 50%;
+  height: auto;
+  background-color: #4d4dec;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+.levi5 h1 {
+  font-size: 2rem;
+  margin-bottom: 10%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.levi5 p{
+  font-family: "Open Sans", sans-serif;
+}
+.desni5 {
+  display: flex;
+  width: 50%;
+  background-color: #4141f0;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+.desni5 img{
+  width: 80%;
+  clip-path: circle(29% at 50% 50%); 
+}
+p{
+  text-align: center;
+}
+footer {
+  background-color: #b9c1cc;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0;
+}
+#logo2 {
+  width: 70px;
+  margin-right: 20px;
+}
+.desni6 {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+}
+.dole {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.dole a {
+  text-decoration: none;
+  color: black;
+}
+.levi6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 912px) {
+  header input,
+  #lista {
+    display: none;
+  }
+  #bars {
+    display: inline-block;
+  }
+  .desno {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    align-items: center;
+  }
+  #logo2 {
+    width: 30px;
+  }
+  footer h1 {
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 715px) {
+  #text{
+    font-size: 1.7rem;
+  }
+  h1 #text{
+    font-size: 1.7rem;
+  }
+  .desni2 h1 #text{
+    font-size: 1.7rem;
+  }
+  #par{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  .dropdown-content {
+    left: 70%;
+  }
+}
+@media screen and (max-width: 555px) {
+  .dropdown-content {
+    left: 65%;
+  }
+}
+@media screen and (max-width: 473px) {
+  .dropdown-content {
+    left: 60%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .dropdown-content {
+    left: 55%;
+  }
+}
+@media screen and (max-width: 400px) {
+  form {
+    display: none;
+  }
+  #hidden {
+    visibility: visible;
+    flex-direction: column;
+  }
+  * {
+    font-size: small;
+  }
+  #logo2 {
+    width: 20px;
+  }
+  .inputi{
+    display: inline-block;
+  }
+  .dropdown-content {
+    left: 52%;
+  }
+}
+@media screen and (max-width: 388px) {
+  .dropdown-content {
+    left: 52%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .levi6 {
+    margin-bottom: 5%;
+  }
+}
