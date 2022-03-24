@@ -19,13 +19,18 @@ glavni.append(kartica1, kartica2, kartica3, kartica4);
 let nizImena = [kartica1, kartica2, kartica3, kartica4];
 
 let t = 0;
+let fetchlink = "https://catfact.ninja/facts";
 let func = async function () {
   try {
-    let res = await axios.get("https://catfact.ninja/facts");
+    let res = await axios.get(fetchlink);
+    console.log(res);
     if (t === 0) {
       t++;
       dugmici(res);
     }
+    // for (let i = 0; i < res.data.links.length; i++) {
+    //   navigacija.appendChild(pageNav(res.data.links[i]));
+    // }
     nizImena.forEach((e, i) => {
       return (e.innerHTML = res.data.data[i].fact);
     });
@@ -51,3 +56,18 @@ function dugmici(res) {
   }
 }
 
+// function pageNav(vals) {
+//   let nav = document.createElement("button");
+//   nav.innerHTML = "";
+
+//   if (vals.active) {
+//     nav.style.background = "tan";
+//   }
+
+//   nav.onclick = function (el) {
+//     el.preventDefault();
+//     fetchlink = vals.url;
+//     func();
+//   };
+//   return nav;
+// }
