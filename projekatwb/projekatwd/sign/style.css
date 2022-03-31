@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+.main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, #2371b6 0%, #3033e2 100%);
+  display: grid;
+  place-content: center;
+  height: fit-content;
+}
+header {
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  margin: 0;
+  color: #f5bc51;
+  font-size: 1.3em;
+}
+#naslov{
+    color:white;
+    text-align: center;
+}
+.text {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  font-size: 0.9em;
+  background-color: initial;
+  text-decoration: none;
+  margin: 0;
+  color: white;
+}
+
+.dokument {
+    width: 100%;
+}
+.glavni{
+    width: 30vw;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+}
+.prvi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#first,#email,#last,#password,#druga {
+  padding: 5px;
+  width: 80%;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 5px 0;
+}
+.doc {
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.lozinka {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.ponlozinka {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+label {
+  color: white;
+}
+input[type="password"] {
+  background-color: initial;
+}
+input[type="email"] {
+  background-color: initial;
+}
+input[type="text"] {
+  background-color: initial;
+}
+.radio {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+.button {
+  width: auto;
+  cursor: pointer;
+  padding: 10px;
+  background-image: linear-gradient(
+    to right,
+    #2580e9 0%,
+    #3c3fe7 51%,
+    #5321db 100%
+  );
+  color: white;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 8%;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border: none;
+  border: 1px solid #3c3fe7;
+}
+.button a{
+  text-decoration: none;
+  color: white;
+}
+.button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 425px) {
+  .doc {
+    width: 100%;
+  }
+  .button {
+    width: 80%;
+  }
+  .glavni{
+      width: 100%;
+  }
+}
